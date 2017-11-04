@@ -1,0 +1,24 @@
+{% assign page_paths = site.pages | map: "path" %}
+
+<header>
+  <div class="website-title">
+    <a class="website-title-link" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  </div>
+
+  <nav><ul>
+    {% for path in page_paths %}
+      {% assign current_page = site.pages | where: "path", path | first %}
+      {% if current_page.title %}
+        {% if current_page.url == page.url %}
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ current_page.url | relative_url }}">{{ current_page.title | escape }}</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ current_page.url | relative_url }}">{{ current_page.title | escape }}</a>
+        </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul></nav>
+</header>

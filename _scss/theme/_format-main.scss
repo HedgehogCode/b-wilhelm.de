@@ -1,0 +1,40 @@
+main {
+  padding: 1.5rem;
+  color: $text-color;
+
+  // Heading
+  .content-header {
+    text-align: center;
+
+    .content-headline {
+      font-size: $font-size-headline;
+      font-family: $heading-font;
+    }
+    .post-meta {
+      color: $meta-text-color;
+      font-size: $font-size-meta;
+      padding-left: $spacing-unit;
+    }
+  }
+
+  // Posts list
+  .posts-list {
+    list-style: none;
+    margin-left: 0;
+
+    .post-item {
+      padding: ($padding-unit * 3) ($spacing-unit / 2);
+      border-bottom: 0.5px solid $post-seperator-color;
+
+      .post-item-date {
+        font-size: $font-size-meta;
+        color: $meta-text-color;
+      }
+    }
+  }
+
+  // Images
+  img {
+    max-width: 100%;
+  }
+}

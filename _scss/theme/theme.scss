@@ -1,0 +1,10 @@
+// Theme of my website
+
+@import "variables";
+@import "base";
+@import "layout";
+
+// Content formats for different parts
+@import "format-header";
+@import "format-main";
+@import "format-footer";

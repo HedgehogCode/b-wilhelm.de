@@ -1,0 +1,48 @@
+# Site settings
+title: Benjamin's Blog
+email: benjamin@b-wilhelm.de
+description: >-
+  Benjamin Wilhelm's blog and website. Articles about machine learning,
+  computer vision, web-development, git and other computer science related
+  stuff I discover during my day as a full time nerd.
+baseurl: ""
+url: ""
+date_format: "%Y-%m-%d"
+site_source: https://github.com/HedgehogCode/website
+twitter_username: bewilh
+github_username: HedgehogCode
+
+# Front Matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      author: "Benjamin Wilhelm"
+
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _scss
+  style: compressed
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

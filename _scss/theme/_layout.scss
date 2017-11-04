@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: $content-font;
+  background: $background-color;
+}
+
+header {
+  @include respond-to(big-screen) {
+    position: fixed;
+    width: $sidebar-width;
+  }
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: $sidebar-background-color;
+}
+main {
+  @include respond-to(big-screen) {
+    position: absolute;
+    left: $sidebar-width;
+    max-width: 50rem;
+  }
+}
+footer {
+  @include respond-to(big-screen) {
+    width: $sidebar-width;
+    position: fixed;
+    bottom: 0;
+  }
+  @include respond-to(small-screen) {
+    width: 100%;
+  }
+  left: 0;
+  background: $sidebar-background-color;
+}

@@ -1,0 +1,48 @@
+header {
+  text-align: center;
+
+  .website-title {
+    @include respond-to(big-screen) {
+      padding: 2rem 0 0 0;
+    }
+    @include respond-to(small-screen) {
+      padding: 1rem 0 0 0;
+    }
+
+    .website-title-link {
+      color: $sidebar-title-color;
+      text-decoration: none;
+      font-size: $font-size-website-title;
+      font-family: $title-font;
+     }
+  }
+
+  nav {
+    @include respond-to(big-screen) {
+      padding: 2rem 0 0 0;
+    }
+    @include respond-to(small-screen) {
+      padding: 1rem 0 0.5rem 0;
+    }
+    font-family: $heading-font;
+
+    ul {
+      margin-left: 0;
+      li.nav-item {
+        list-style-type: none;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        color: $sidebar-nav-color;
+
+        .nav-link {
+          color: inherit;
+          text-decoration: none;
+          font-size: $font-size-nav;
+        }
+      }
+      li.nav-item.active {
+        color: $sidebar-nav-color-active;
+      }
+    }
+  }
+}

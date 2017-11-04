@@ -1,0 +1,61 @@
+// Layout
+$sidebar-width: 20rem;
+$break-small: 50rem;
+$spacing-unit: 1.2rem;
+$padding-unit: 0.6rem;
+
+// Media queries
+@mixin respond-to($media) {
+  @if $media == small-screen {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == big-screen {
+    @media not screen and (max-width: $break-small) { @content; }
+  }
+}
+
+// Color palette
+$color-light-shades: #F2F1F0;
+$color-light-accent: #948468;
+$color-brand:        #939496;
+$color-dark-accent:  #82615B;
+$color-dark-shades:  #3D3838;
+
+// --- Colors
+// Backgrounds
+$sidebar-background-color: $color-dark-shades;
+$background-color: $color-light-shades;
+$code-background-color: darken($color-light-shades, 15%);
+$table-background-color: darken($color-light-shades, 10%);
+$quote-border-color: $color-light-accent;
+$post-seperator-color: $color-light-accent;
+// Fonts
+$sidebar-title-color: $color-brand;
+$sidebar-nav-color: $color-light-accent;
+$sidebar-nav-color-active: lighten($color-light-accent, 10%);
+$footer-color: darken($color-light-accent, 15%);
+$footer-color-link: lighten($color-light-accent, 10%);
+$link-color: $color-dark-accent;
+$text-color: $color-dark-shades;
+$meta-text-color: $color-dark-accent;
+
+// Font sizes
+$font-size-website-title: 2rem;
+$font-size-nav: 1.2rem;
+$font-size-footer: 0.8rem;
+$font-size-media-links: 2rem;
+
+$font-size-headline: 2.5rem;
+$font-size-h1: 1.8rem;
+$font-size-h2: 1.5rem;
+$font-size-h3: 1.2rem;
+
+$font-size-code: 0.9rem;
+$font-size-meta: 0.8rem;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:900|Open+Sans|Source+Code+Pro');
+$title-font: 'Fira Sans Condensed', sans-serif;
+$heading-font: 'Fira Sans Condensed', sans-serif;
+$content-font: 'Open Sans', sans-serif;
+$code-font: 'Source Code Pro', monospace;

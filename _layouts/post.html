@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="content-header">
+    <h1 class="content-headline" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: site.date_format }}
+      </time>
+      {% if page.author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+      {% endif %}
+    </p>
+  </div>
+
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>

@@ -1,0 +1,36 @@
+footer {
+  text-align: center;
+  font-size: $font-size-footer;
+  color: $footer-color;
+
+  .media-links {
+    font-size: $font-size-media-links;
+    padding: 1rem 0.5rem;
+
+    a {
+      color: inherit;
+
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+
+  .copyright {
+    padding: 0 0.5rem 1rem 0.5rem;
+    line-height: 1.25rem;
+  }
+
+  a {
+    color: $footer-color-link;
+    text-decoration: none;
+
+    &:visited {
+      color: darken($footer-color-link, 10%);
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

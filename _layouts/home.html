@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article>
+
+  {{ content }}
+
+  <div class="content-header">
+    <h1 class="content-headline">Posts</h1>
+  </div>
+
+  <ul class="posts-list">
+    {% for post in site.posts %}
+    <li class="post-item">
+      <h3>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h3>
+      <span class="post-item-date">{{ post.date | date: site.date_format }}</span>
+
+      {{ post.excerpt }}
+
+    </li>
+    {% endfor %}
+  </ul>
+</article>
