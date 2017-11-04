@@ -30,5 +30,4 @@ The content of the website is licensed under the [Creative Commons Attribution 3
 ## TODOs
 
 * Description
-* Compress html
 * Add CI: [https://jekyllrb.com/docs/continuous-integration/](https://jekyllrb.com/docs/continuous-integration/)
