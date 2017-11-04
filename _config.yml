@@ -8,7 +8,7 @@ description: >-
 baseurl: ""
 url: ""
 date_format: "%Y-%m-%d"
-site_source: https://github.com/HedgehogCode/website
+site_source: https://github.com/HedgehogCode/hedgehogcode.github.io
 twitter_username: bewilh
 github_username: HedgehogCode
 
