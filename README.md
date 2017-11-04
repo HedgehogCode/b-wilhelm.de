@@ -30,6 +30,5 @@ The content of the website is licensed under the [Creative Commons Attribution 3
 ## TODOs
 
 * Description
-* Add site notice (Impressum) and data privacy statement (Datenshutzerklaerung)
 * Compress html
 * Add CI: [https://jekyllrb.com/docs/continuous-integration/](https://jekyllrb.com/docs/continuous-integration/)

@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: /about/
+menu: main
 ---
 
 This is my blog...
