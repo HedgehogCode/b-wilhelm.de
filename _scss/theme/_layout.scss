@@ -1,5 +1,9 @@
+html {
+  height: 100%;
+}
 body {
-  margin: 0;
+  position: relative;
+  min-height: 100%;
   font-family: $content-font;
   background: $background-color;
 }
@@ -19,17 +23,22 @@ main {
     position: absolute;
     left: $sidebar-width;
     max-width: 50rem;
+    padding: 1.5rem;
+  }
+  @include respond-to(small-screen) {
+    padding: 1.5rem 1.5rem 15rem 1.5rem;
   }
 }
 footer {
   @include respond-to(big-screen) {
-    width: $sidebar-width;
     position: fixed;
-    bottom: 0;
+    width: $sidebar-width;
   }
   @include respond-to(small-screen) {
+    position: absolute;
     width: 100%;
   }
+  bottom: 0;
   left: 0;
   background: $sidebar-background-color;
 }
