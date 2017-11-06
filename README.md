@@ -31,5 +31,5 @@ The content of the website is licensed under the [Creative Commons Attribution 3
 
 * Write post on why to use GitHub Pages
 * Write post about something else
-* Optimise page
+* Optimise page: Use cloudflare
 * Add CI: [https://jekyllrb.com/docs/continuous-integration/](https://jekyllrb.com/docs/continuous-integration/)

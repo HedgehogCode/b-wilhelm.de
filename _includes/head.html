@@ -7,12 +7,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- All my CSS is critical ;) -->
+  <style>
+    {% capture style %}
+    {% include style.scss %}
+    {% endcapture %}
+    {{ style | scssify }}
+  </style>
+
   <!-- Load CSS asynchronously -->
   <script>
     {% include loadCSS.min.js %}
 
     /* Stylesheet */
-    loadCSS("/assets/css/style.css");
+    loadCSS("/assets/css/font-awesome.min.css");
 
     /* Google Fonts */
     loadCSS("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:900|Open+Sans|Source+Code+Pro");
@@ -21,7 +29,7 @@
   <!-- Fallback resource loading without javascript -->
   <noscript>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:900|Open+Sans|Source+Code+Pro">
