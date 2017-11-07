@@ -22,6 +22,7 @@ main {
   @include respond-to(big-screen) {
     position: absolute;
     left: $sidebar-width;
+    right: 0;
     max-width: 50rem;
     padding: 1.5rem;
   }

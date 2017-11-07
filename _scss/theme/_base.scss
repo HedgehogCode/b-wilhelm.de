@@ -86,11 +86,11 @@ a {
  * Code
  */
 pre, code {
- font-family: $code-font;
- font-size: $font-size-code;
- border: 1px solid darken($code-background-color, 5%);
- border-radius: 3px;
- background-color: $code-background-color;
+  font-family: $code-font;
+  font-size: $font-size-code;
+  border: 1px solid darken($code-background-color, 5%);
+  border-radius: 3px;
+  background-color: $code-background-color;
 }
 code {
   padding: 1px 5px;
