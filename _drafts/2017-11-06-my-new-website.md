@@ -28,11 +28,73 @@ Jekyll is awesome as well. I can write my content in markdown :heart_eyes: and s
 
 During my transition from a fully featured CMS to simple static site generator, I somehow thought I should keep using a CMS but a smaller and nicer one. A lot of googling led me to grav. A plaintext CMS which I think is awesome! I almost ended up using it but Jekyll on GitHub pages is just too great :wink:.
 
-## Things I learned
+## How to make it fast
 
-### How to make a website fast
+Somehow I really wanted to get the 100/100 score in Google's PageSpeed Insights. I just wasn't happy with a not perfect score. And I got it :tada::
 
-I realized that it's not to hard but also not trivial to create a fast website. (At least for a small and easy site as mine). 
+![Google PageSpeed Insights Score]({{ "/assets/img/pagespeed.png" | absolute_url }})
+
+I realized that it's not to hard but also not trivial to create a fast website. (At least for a small and easy page as mine)
+
+All I did was:
+
+### Inline CSS in the HTML file
+
+This can be done by moving the main SCSS file to `_includes` and adding the following liquid code to the HTML head:
+
+{% raw %}
+```
+<style>
+  {% capture style %}
+  {% include style.scss %}
+  {% endcapture %}
+  {{ style | scssify }}
+</style>
+```
+{% endraw %}
+
+Luckily my CSS is pretty small so I don't have to find out what of it is critical.
+
+### Use [loadCSS](https://github.com/filamentgroup/loadCSS) to load additional resources asynchronously
+
+I copied the `laodCSS.min.js` into my `_includes` folder and used it like this:
+
+{% raw %}
+```html
+<script>
+  {% include loadCSS.min.js %}
+
+  /* Font-awesome */
+  loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+  /* Google Fonts */
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:900|Open+Sans|Source+Code+Pro");
+</script>
+```
+{% endraw %}
+
+But I don't want my website to depend on javascript, so I added a fallback if javasript is disabled:
+
+```html
+<!-- Fallback resource loading without javascript -->
+<noscript>
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:900|Open+Sans|Source+Code+Pro">
+</noscript>
+```
+
+### Use external resources
+
+At first I copied font-awesome into my project as they suggest on their "Get Started" page. But the GitHub Pages server gives the resource only a caching header of 10 minutes so font awesome needs to be donloaded by the browser way to often even though I would probably never change anything.
+
+The solution was pretty easy... I just got fontawesome from Bootstrap's CDN:
+
+```javascript
+loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+```
 
 ## Conclusion
 
