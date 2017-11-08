@@ -5,7 +5,7 @@ menu: main
 ---
 
 <center>
-<img src="{{ "/img/face.svg" | absolute_url }}" width="300px">
+<img src="{{ "/img/face.svg" | absolute_url }}" alt="Benjamin Wilhelm" width="300px">
 </center>
 
 <p></p>
