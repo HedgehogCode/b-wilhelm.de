@@ -31,4 +31,4 @@ The content of the website is licensed under the [Creative Commons Attribution 3
 
 * Write post on why to use GitHub Pages
 * Write post about something else
-* Use travis ci to deploy the site: [http://ajaykarwal.com/deploying-jekyll-using-travis-ci/](http://ajaykarwal.com/deploying-jekyll-using-travis-ci/)
+ * Use travis ci to deploy the site: [http://ajaykarwal.com/deploying-jekyll-using-travis-ci/](http://ajaykarwal.com/deploying-jekyll-using-travis-ci/) + See [Encrypted environment variables](https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key)
