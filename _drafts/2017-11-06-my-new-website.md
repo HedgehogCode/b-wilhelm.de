@@ -32,7 +32,7 @@ During my transition from a fully featured CMS to simple static site generator, 
 
 Somehow I really wanted to get the 100/100 score in Google's PageSpeed Insights. I just wasn't happy with a not perfect score. And I got it :tada::
 
-![Google PageSpeed Insights Score]({{ "/assets/img/pagespeed.png" | absolute_url }})
+![Google PageSpeed Insights Score]({{ "/img/pagespeed.png" | absolute_url }})
 
 I realized that it's not to hard but also not trivial to create a fast website. (At least for a small and easy page as mine)
 
