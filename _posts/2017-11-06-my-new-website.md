@@ -1,6 +1,6 @@
 ---
 title: My new Website
-date: 2017-11-05 14:32:12 +0200
+date: 2018-01-21
 layout: post
 author: Benjamin Wilhelm
 permalink: /my-new-website/
@@ -8,7 +8,7 @@ categories: web-development
 tags: web git jekyll github
 ---
 
-I recently decided that I want to create a new website in the form of a blog with possibly some static pages.
+I recently decided that I want to create a new website for my personal use containing some static pages and a blog. I ended up using the awesome static site generator Jekyll. Additionally, I tuned the loading times a lot which gave me a result of 100 points in Googles PageSpeed Insights.
 
 ## Why?
 
@@ -20,17 +20,17 @@ Additionally, I had a website for a while now but it used WordPress and as a com
 
 ### Jekyll
 
-Jekyll is awesome as well. I can write my content in markdown :heart_eyes: and serve static compressed HTML and CSS files. (Take a look at the source repository if you want to know how I compress HTML files). I wouldn't consider myself a web developer but I believe to know that this is a good thing for loading times and comparability.
+Jekyll is awesome as well. I can write my content in markdown :heart_eyes: and serve static compressed HTML and CSS files. (Take a look at the source repository if you want to know how I compress HTML files). I wouldn't consider myself a web developer but I believe to know that this is a good thing for loading times.
 
-During my transition from a fully featured CMS to simple static site generator, I somehow thought I should keep using a CMS but a smaller and nicer one. A lot of googling led me to grav. A plaintext CMS which I think is awesome! I almost ended up using it but Jekyll on GitHub pages is just too great :wink:.
+During my transition from a fully featured CMS to simple static site generator, I somehow thought I should keep using a CMS but a smaller and nicer one. A lot of googling led me to grav. A plaintext CMS which I think is awesome! I almost ended up using it but Jekyll is just too great :wink:.
 
 ### Travis
 
-I use travis to build the static page and upload it to my server. Maybe I will write another article on how exactly I did this.
+I use Travis to build the static page and upload it to my server. Maybe I will write another article on how exactly I did this.
 
 ### Why not GitHub Pages?
 
-I already have my website in a GIT repository on GitHub and could just use GitHub Pages to host it. But the problem is that I couldn't use https with my own domain. And I am all about https everywhere.
+I already have my website in a GIT repository on GitHub and could just use GitHub Pages to host it. But the problem is that I couldn't use https for my own domain. And I am all for https everywhere.
 
 
 ## How to make it fast
@@ -78,7 +78,7 @@ I copied the `laodCSS.min.js` into my `_includes` folder and used it like this:
 ```
 {% endraw %}
 
-But I don't want my website to depend on javascript, so I added a fallback if javasript is disabled:
+But I don't want my website to depend on javascript, so I added a fallback if javascript is disabled:
 
 ```html
 <!-- Fallback resource loading without javascript -->
@@ -93,7 +93,7 @@ But I don't want my website to depend on javascript, so I added a fallback if ja
 
 ### Use external resources
 
-At first I copied font-awesome into my project as they suggest on their "Get Started" page. But the GitHub Pages server gives the resource only a caching header of 10 minutes so font awesome needs to be donloaded by the browser way to often even though I would probably never change anything.
+At first, I copied font-awesome into my project as they suggest on their "Get Started" page. But the GitHub Pages server gives the resource only a caching header of 10 minutes so font awesome needs to be downloaded from the browser way to often even though I would probably never change anything.
 
 The solution was pretty easy... I just got fontawesome from Bootstrap's CDN:
 
