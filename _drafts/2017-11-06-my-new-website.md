@@ -18,15 +18,20 @@ Additionally, I had a website for a while now but it used WordPress and as a com
 
 ## What technologies do I use?
 
-### GitHub Pages
-
-I was sure about using a GIT repository to versionise the content from the beginning and using GitHub Pages is just the easiest and most intuitive solution which is based on a GIT repository.
-
 ### Jekyll
 
 Jekyll is awesome as well. I can write my content in markdown :heart_eyes: and serve static compressed HTML and CSS files. (Take a look at the source repository if you want to know how I compress HTML files). I wouldn't consider myself a web developer but I believe to know that this is a good thing for loading times and comparability.
 
 During my transition from a fully featured CMS to simple static site generator, I somehow thought I should keep using a CMS but a smaller and nicer one. A lot of googling led me to grav. A plaintext CMS which I think is awesome! I almost ended up using it but Jekyll on GitHub pages is just too great :wink:.
+
+### Travis
+
+I use travis to build the static page and upload it to my server. Maybe I will write another article on how exactly I did this.
+
+### Why not GitHub Pages?
+
+I already have my website in a GIT repository on GitHub and could just use GitHub Pages to host it. But the problem is that I couldn't use https with my own domain. And I am all about https everywhere.
+
 
 ## How to make it fast
 
