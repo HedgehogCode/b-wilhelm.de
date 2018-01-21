@@ -1,8 +1,8 @@
 # Site settings
-title: Benjamin's Blog
+title: Benjamin Wilhelm
 email: benjamin@b-wilhelm.de
 description: >-
-  Benjamin Wilhelm's blog and website. Articles about machine learning,
+  Benjamin Wilhelm's website and blog. Articles about machine learning,
   computer vision, web-development, git and other computer science related
   stuff I discover during my day as a full time nerd.
 baseurl: ""
