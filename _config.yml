@@ -35,6 +35,7 @@ sass:
 plugins:
   - jekyll-feed
   - jemoji
+  - jekyll-inline-svg
 
 # Exclude from processing.
 exclude:
@@ -44,3 +45,6 @@ exclude:
   - vendor
   - LICENSE
   - README.md
+
+svg:
+  - optimize: true

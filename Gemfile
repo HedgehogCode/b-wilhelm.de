@@ -6,6 +6,7 @@ gem "jekyll", "~> 3.6.2"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jemoji", "~>0.8"
+  gem "jekyll-inline-svg", "~>0.0.2"
 end
 
 # HTML Proofer

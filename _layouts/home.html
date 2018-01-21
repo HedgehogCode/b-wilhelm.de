@@ -4,12 +4,18 @@ layout: default
 
 <article>
 
-  {{ content }}
-
   <div class="content-header">
-    <h1 class="content-headline">Posts</h1>
+    <h1 class="content-headline">Home</h1>
   </div>
 
+  <center>
+    <p>
+      {% svg /img/face-transparent.svg id="profile-pic" %}
+    </p>
+  </center>
+  {{ content }}
+
+  <h1>Posts</h1>
   <ul class="posts-list">
     {% for post in site.posts %}
     <li class="post-item">
@@ -23,4 +29,9 @@ layout: default
     </li>
     {% endfor %}
   </ul>
+
+  <h1>Contact</h1>
+  {% capture contact_md %}{% include contact.md %}{% endcapture %}
+  {{ contact_md | markdownify }}
+
 </article>
