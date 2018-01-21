@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-
-if  [[ $TRAVIS_PULL_REQUEST = "false" ]]
-then
-  rsync _site $USER@$HOST:$WEBROOT_DEV
-fi
