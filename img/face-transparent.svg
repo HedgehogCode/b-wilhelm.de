@@ -15,7 +15,7 @@
    version="1.1"
    id="svg220"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="face.svg">
+   sodipodi:docname="face-transparent.svg">
   <title
      id="title5301">Profile picture Benjamin Wilhelm</title>
   <defs
@@ -104,8 +104,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="147.75667"
-     inkscape:cy="299.93837"
+     inkscape:cx="2.7997808"
+     inkscape:cy="298.92822"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -137,25 +137,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-161.53336)">
-    <g
-       transform="matrix(0.06614583,0,0,-0.06614583,7.9644442e-6,296.99999)"
-       id="g56">
-      <g
-         clip-path="url(#clipPath62)"
-         id="g58">
-        <g
-           id="g64">
-          <g
-             id="g66">
-            <path
-               id="path74"
-               style="fill:url(#radialGradient72);stroke:none"
-               d="M 0,0 H 2048 V 2048 H 0 Z"
-               inkscape:connector-curvature="0" />
-          </g>
-        </g>
-      </g>
-    </g>
     <g
        transform="matrix(0.06614583,0,0,-0.06614583,0.01055823,296.99999)"
        id="g76">

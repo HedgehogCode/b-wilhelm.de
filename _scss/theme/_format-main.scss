@@ -16,13 +16,18 @@ main {
     }
   }
 
+  // Profile picture
+  #profile-pic {
+    width: 100%;
+    max-width: $profile-pic-width;
+  }
   // Posts list
   .posts-list {
     list-style: none;
     margin-left: 0;
 
     .post-item {
-      padding: ($padding-unit * 3) ($spacing-unit / 2);
+      padding: ($padding-unit) ($spacing-unit / 2);
       border-bottom: 0.5px solid $post-seperator-color;
 
       .post-item-date {

@@ -1,7 +1,10 @@
 <head>
 
-  <!-- TODO make this nice! -->
+  {% if page.title == blank %}
+  <title>{{ site.title }}</title>
+  {% else %}
   <title>{{ site.title }} - {{ page.title }}</title>
+  {% endif %}
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
