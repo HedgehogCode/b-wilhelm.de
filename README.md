@@ -14,6 +14,11 @@ Serve the site locally
 $ bundle exec jekyll serve
 ```
 
+Build and check with jekyll-test
+```
+$ bundle exec rake
+```
+
 ## Update
 
 Keep the site up to date with the GitHub Pages gem:

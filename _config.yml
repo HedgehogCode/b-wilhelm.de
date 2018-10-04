@@ -41,6 +41,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Rakefile
   - node_modules
   - vendor
   - LICENSE
