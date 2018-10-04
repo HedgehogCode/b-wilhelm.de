@@ -46,6 +46,7 @@ exclude:
   - vendor
   - LICENSE
   - README.md
+  - favicon.svg
 
 svg:
   optimize: true
