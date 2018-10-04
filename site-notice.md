@@ -32,4 +32,4 @@ The website doesn't save any information of the visitor and does not save cookie
 
 #### Google Fonts
 
-The website uses fonts loaded from Google Fonts. Therefore your browser will request and download font files from Google. See [https://developers.google.com/fonts/faq#what-does-using-the-google-fonts-api-mean-for-the-privacy-of-my-users](https://developers.google.com/fonts/faq#what-does-using-the-google-fonts-api-mean-for-the-privacy-of-my-users) for what data they save.
+The website uses fonts loaded from Google Fonts. Therefore your browser will request and download font files from Google. See [https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users) for what data they save.
