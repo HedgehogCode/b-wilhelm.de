@@ -47,4 +47,4 @@ exclude:
   - README.md
 
 svg:
-  - optimize: true
+  optimize: true
