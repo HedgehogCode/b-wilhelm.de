@@ -18,7 +18,7 @@ Responsible for content and images: Benjamin Wilhelm.
 
 I carefully write and select the content of the website. But I am not perfect. There will be mistakes and outdated information. Please do not hesitate to contact me about them. I would love a pull request to the [website repository on GitHub](https://github.com/HedgehogCode/hedgehogcode.github.io).
 
-The content is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+The content is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 #### Links
 
