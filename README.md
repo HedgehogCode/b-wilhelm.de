@@ -1,5 +1,9 @@
 # My website
 
+| master | develop |
+|--------|---------|
+| [![Build Status](https://travis-ci.org/HedgehogCode/b-wilhelm.de.svg?branch=master)](https://travis-ci.org/HedgehogCode/b-wilhelm.de) | [![Build Status](https://travis-ci.org/HedgehogCode/b-wilhelm.de.svg?branch=develop)](https://travis-ci.org/HedgehogCode/b-wilhelm.de) |
+
 ## Development
 
 Make sure you have ruby and bundler installed.
