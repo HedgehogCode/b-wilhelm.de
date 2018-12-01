@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-12-01T12:25:17+00:00</updated><id>/feed.xml</id><title type="html">Benjamin Wilhelm</title><subtitle>Benjamin Wilhelm's website and blog. Articles about machine learning, computer vision, web-development, git and other computer science related stuff I discover during my day as a full time nerd.</subtitle><entry><title type="html">My new Website</title><link href="/my-new-website/" rel="alternate" type="text/html" title="My new Website" /><published>2018-01-21T00:00:00+00:00</published><updated>2018-01-21T00:00:00+00:00</updated><id>/my-new-website</id><content type="html" xml:base="/my-new-website/">&lt;p&gt;I recently decided that I want to create a new website for my personal use containing some static pages and a blog. I ended up using the awesome static site generator Jekyll. Additionally, I tuned the loading times a lot which gave me a result of 100 points in Googles PageSpeed Insights.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;During my usual nerdy day, I sometimes discover things I want to share. This blog is supposed to be the place. I hope that I will use it…&lt;/p&gt;
+
+&lt;p&gt;Additionally, I had a website for a while now but it used WordPress and as a computer scientist, I hate it. It’s so much more intuitive for me to write a post in a markdown file on my computer and run &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; to publish it than logging into a slow backend and writing there. It just fits my usual workflow better.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-technologies-do-i-use&quot;&gt;What technologies do I use?&lt;/h2&gt;
+
+&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is awesome as well. I can write my content in markdown :heart_eyes: and serve static compressed HTML and CSS files. (Take a look at the source repository if you want to know how I compress HTML files). I wouldn’t consider myself a web developer but I believe to know that this is a good thing for loading times.&lt;/p&gt;
+
+&lt;p&gt;During my transition from a fully featured CMS to simple static site generator, I somehow thought I should keep using a CMS but a smaller and nicer one. A lot of googling led me to grav. A plaintext CMS which I think is awesome! I almost ended up using it but Jekyll is just too great :wink:.&lt;/p&gt;
+
+&lt;h3 id=&quot;travis&quot;&gt;Travis&lt;/h3&gt;
+
+&lt;p&gt;I use Travis to build the static page and upload it to my server. Maybe I will write another article on how exactly I did this.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-not-github-pages&quot;&gt;Why not GitHub Pages?&lt;/h3&gt;
+
+&lt;p&gt;I already have my website in a GIT repository on GitHub and could just use GitHub Pages to host it. But the problem is that I couldn’t use https for my own domain. And I am all for https everywhere.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-make-it-fast&quot;&gt;How to make it fast&lt;/h2&gt;
+
+&lt;p&gt;Somehow I really wanted to get the 100/100 score in Google’s PageSpeed Insights. I just wasn’t happy with a not perfect score. And I got it :tada::&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/pagespeed.png&quot; alt=&quot;Google PageSpeed Insights Score&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I realized that it’s not to hard but also not trivial to create a fast website. (At least for a small and easy page as mine)&lt;/p&gt;
+
+&lt;p&gt;All I did was:&lt;/p&gt;
+
+&lt;h3 id=&quot;inline-css-in-the-html-file&quot;&gt;Inline CSS in the HTML file&lt;/h3&gt;
+
+&lt;p&gt;This can be done by moving the main SCSS file to &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; and adding the following liquid code to the HTML head:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+  {% capture style %}
+  {% include style.scss %}
+  {% endcapture %}
+  {{ style | scssify }}
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Luckily my CSS is pretty small so I don’t have to find out what of it is critical.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-loadcss-to-load-additional-resources-asynchronously&quot;&gt;Use &lt;a href=&quot;https://github.com/filamentgroup/loadCSS&quot;&gt;loadCSS&lt;/a&gt; to load additional resources asynchronously&lt;/h3&gt;
+
+&lt;p&gt;I copied the &lt;code class=&quot;highlighter-rouge&quot;&gt;laodCSS.min.js&lt;/code&gt; into my &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; folder and used it like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;loadCSS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;js&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;cm&quot;&gt;/* Font-awesome */&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;loadCSS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;cm&quot;&gt;/* Google Fonts */&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;loadCSS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:900|Open+Sans|Source+Code+Pro&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But I don’t want my website to depend on javascript, so I added a fallback if javascript is disabled:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Fallback resource loading without javascript --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;noscript&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Font-awesome --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Google Fonts --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:900|Open+Sans|Source+Code+Pro&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/noscript&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;use-external-resources&quot;&gt;Use external resources&lt;/h3&gt;
+
+&lt;p&gt;At first, I copied font-awesome into my project as they suggest on their “Get Started” page. But the GitHub Pages server gives the resource only a caching header of 10 minutes so font awesome needs to be downloaded from the browser way to often even though I would probably never change anything.&lt;/p&gt;
+
+&lt;p&gt;The solution was pretty easy… I just got fontawesome from Bootstrap’s CDN:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;loadCSS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;It was a nice project but I am glad that I am not a web developer. I just never get HTML and CSS to do what I want and need forever to build a working page. Probably I solved some problems in an ugly way or didn’t do things the ‘nice’ way. I would love tips and advice!&lt;/p&gt;</content><author><name>Benjamin Wilhelm</name></author><category term="web" /><category term="git" /><category term="jekyll" /><category term="github" /><summary type="html">I recently decided that I want to create a new website for my personal use containing some static pages and a blog. I ended up using the awesome static site generator Jekyll. Additionally, I tuned the loading times a lot which gave me a result of 100 points in Googles PageSpeed Insights.</summary></entry></feed>
