@@ -1,8 +1,8 @@
 # My website
 
-| master | develop |
+| master | release |
 |--------|---------|
-| [![Build Status](https://travis-ci.org/HedgehogCode/b-wilhelm.de.svg?branch=master)](https://travis-ci.org/HedgehogCode/b-wilhelm.de) | [![Build Status](https://travis-ci.org/HedgehogCode/b-wilhelm.de.svg?branch=develop)](https://travis-ci.org/HedgehogCode/b-wilhelm.de) |
+| [![Build Status](https://travis-ci.org/HedgehogCode/b-wilhelm.de.svg?branch=master)](https://travis-ci.org/HedgehogCode/b-wilhelm.de) | [![Build Status](https://travis-ci.org/HedgehogCode/b-wilhelm.de.svg?branch=release)](https://travis-ci.org/HedgehogCode/b-wilhelm.de) |
 
 ## Development
 
