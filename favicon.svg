@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="512"
-   height="512"
-   viewBox="0 0 135.46666 135.46668"
+   width="128"
+   height="128"
+   viewBox="0 0 33.866665 33.86667"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 2405546, 2018-03-11"
@@ -25,15 +25,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="139.59228"
-     inkscape:cy="96.716259"
+     inkscape:zoom="2.8"
+     inkscape:cx="11.177615"
+     inkscape:cy="44.638177"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="3072"
-     inkscape:window-height="1677"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1" />
@@ -53,17 +53,17 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-161.53332)">
+     transform="translate(0,-263.13332)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="4.2724695"
-       y="265.96259"
+       style="font-style:normal;font-weight:normal;font-size:2.93725848px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07343146"
+       x="-0.67935663"
+       y="290.2511"
        id="text817"><tspan
          sodipodi:role="line"
          id="tspan815"
-         x="4.2724695"
-         y="265.96259"
-         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:condensed;font-size:98.77777863px;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed, Ultra-Bold Condensed';stroke-width:0.26458332">bw</tspan></text>
+         x="-0.67935663"
+         y="290.2511"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:condensed;font-size:27.41441345px;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed, Ultra-Bold Condensed';stroke-width:0.07343146">bw</tspan></text>
   </g>
 </svg>
