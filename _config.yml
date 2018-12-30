@@ -5,8 +5,7 @@ description: >-
   Benjamin Wilhelm's website and blog. Articles about machine learning,
   computer vision, web-development, git and other computer science related
   stuff I discover during my day as a full time nerd.
-baseurl: ""
-url: ""
+url: "https://b-wilhelm.de"
 date_format: "%Y-%m-%d"
 site_source: https://github.com/HedgehogCode/b-wilhelm.de
 twitter_username: bewilh
