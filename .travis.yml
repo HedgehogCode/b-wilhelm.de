@@ -13,6 +13,11 @@ addons:
 
 cache: bundler
 
+before_install:
+- convert -list policy
+- identify -list resource
+- cat /etc/ImageMagick/policy.xml
+
 branches:
   only:
   - master
