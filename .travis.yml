@@ -1,11 +1,15 @@
 language: ruby
 rvm:
-- 2.4.3
+- 2.5.3
 
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev # Link checker
+    - imagemagick
+    - libmagickcore-dev
+    - libmagickwand-dev
+    - graphicsmagick
 
 cache: bundler
 
@@ -27,7 +31,6 @@ deploy:
   keep-history: true
   on:
     branch: release
-
 
 env:
   global:

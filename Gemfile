@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.11"
   gem "jemoji", "~>0.10"
   gem "jekyll-inline-svg", "~>1.1"
+  gem "jekyll-favicon", "~> 0.2.4"
 end
 
 # Jekyll-Test
