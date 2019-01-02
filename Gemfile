@@ -10,9 +10,9 @@ group :jekyll_plugins do
   gem "jekyll-inline-svg", "~>1.1"
 end
 
-# Jekyll-Test
+# HTML Proofer
 group :test do
-  gem "jekyll-test", "~> 1.1"
+  gem "html-proofer", "~> 3.9"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
