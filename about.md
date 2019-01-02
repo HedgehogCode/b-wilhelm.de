@@ -20,10 +20,10 @@ I am Benjamin Wilhelm, a __computer science__ student and full time nerd.
 * computer vision
 * git
 * open source
-* linux
+* Linux
 * ...
 
-## Short résumé
+## Short CV
 
 __since Oct. 2014:__ Student at the University of Konstanz in Computer Science.  
 __Oct. 2015 - Aug. 2017:__ Research assistant at the Chair for Bioinformatics and Information Mining in Konstanz.  

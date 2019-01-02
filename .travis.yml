@@ -14,11 +14,11 @@ branches:
   - master
   - release
 
-script: ".travis/build.sh"
+script: "bundle exec rake"
 
 deploy:
   provider: pages
-  local-dir: ./site
+  local-dir: ./_site
   target-branch: gh-pages
   email: deploy@travis-ci.org
   name: Deployment Bot
