@@ -1,6 +1,7 @@
 ---
 title: Academia
 permalink: /academia/
+redirect_from: /publications/
 menu: main
 ---
 
