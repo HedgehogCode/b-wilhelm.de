@@ -15,4 +15,6 @@ menu: main
 
 # Other
 
-* __A Review of Recent Improvements of Generative Adversarial Networks__. Paper for the seminar "Deep Learning: Recent Developments" at the University of Konstanz. February 2019. [Paper](/uploads/paper_Review_of_Recent_Improvements_of_GANs.pdf) • [Presentation](/uploads/presentation_Review_of_Recent_Improvements_of_GANs.pdf)
+* __A Review of Recent Improvements of Generative Adversarial Networks__. Paper for the seminar "Deep Learning: Recent Developments" at the University of Konstanz. February 2019. [Paper](/uploads/paper_Review_of_Recent_Improvements_of_GANs.pdf) • [Slides](/uploads/presentation_Review_of_Recent_Improvements_of_GANs.pdf)
+
+* __Evaluating the Applicability of Transfer Learning for Deep Learning Based Segmentation of Microscope Images__. Bachelor's thesis. October 2019. [Thesis](/uploads/bt_benjamin-wilhelm.pdf) • [Slides](/uploads/bt_benjamin-wilhelm_slides.pdf)
